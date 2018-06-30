@@ -1,14 +1,8 @@
-import pymongo
 import requests
-from bs4 import BeautifulSoup
 from requests.exceptions import ConnectionError
 from lxml.etree import XMLSyntaxError
 from pyquery import PyQuery as pq
-import re
-from hashlib import md5
-from json.decoder import JSONDecodeError
 import csv
-from multiprocess.pool import Pool
 
 headers = {
     'Host': 'www.boolaw.com',
